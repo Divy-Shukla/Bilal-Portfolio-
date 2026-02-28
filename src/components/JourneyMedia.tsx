@@ -52,12 +52,22 @@ const JourneyMedia: React.FC<JourneyMediaProps> = ({ items }) => {
                                 <div className="card-3d w-full overflow-hidden relative">
                                     <video
                                         src={item.src}
-                                        autoPlay
                                         muted
                                         loop
                                         playsInline
                                         preload="metadata"
-                                        className="w-full h-auto aspect-video object-cover"
+                                        poster={item.src.replace('.mp4', '_poster.webp')}
+                                        className="w-full h-auto aspect-[16/10] md:aspect-video object-cover rounded-2xl"
+                                        onMouseEnter={(e) => (e.target as HTMLVideoElement).play()}
+                                        onMouseLeave={(e) => {
+                                            const v = e.target as HTMLVideoElement;
+                                            v.pause();
+                                        }}
+                                        onClick={(e) => {
+                                            // Fallback for mobile tap-to-play
+                                            const v = e.target as HTMLVideoElement;
+                                            v.paused ? v.play() : v.pause();
+                                        }}
                                     />
                                     {/* Subtle glass reflection overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent mix-blend-overlay pointer-events-none" />

@@ -8,7 +8,6 @@ const Contact: React.FC = () => {
             <div className="absolute inset-0 pointer-events-none opacity-[0.03] z-0">
                 <video
                     className="w-full h-full object-cover grayscale"
-                    autoPlay
                     muted
                     loop
                     playsInline
