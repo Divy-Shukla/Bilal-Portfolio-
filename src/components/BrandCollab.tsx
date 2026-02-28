@@ -63,16 +63,11 @@ const BrandCollab: React.FC = () => {
                             <video
                                 src={item.src}
                                 className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
+                                autoPlay
                                 muted
                                 loop
                                 playsInline
                                 preload="metadata"
-                                onMouseEnter={(e) => (e.target as HTMLVideoElement).play()}
-                                onMouseLeave={(e) => {
-                                    const v = e.target as HTMLVideoElement;
-                                    v.pause();
-                                    v.currentTime = 0;
-                                }}
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 pointer-events-none">
                                 <h3 className="text-2xl font-bold text-white font-montserrat">{item.title}</h3>
