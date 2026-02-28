@@ -15,8 +15,9 @@ const About: React.FC = () => {
                 >
                     <div className="relative w-[140px] h-[140px] md:w-[180px] md:h-[180px] lg:w-[220px] lg:h-[220px] shrink-0 rounded-full overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.18)] border-8 border-white mx-auto">
                         <img
-                            src="/media/Profile Pic.jpeg"
+                            src="/media/Profile Pic.webp"
                             alt="Bilal Shakeel"
+                            loading="lazy"
                             className="w-full h-full object-cover object-top"
                         />
                         <div className="absolute inset-0 rounded-full border border-[var(--color-primary)]/20 pointer-events-none" />

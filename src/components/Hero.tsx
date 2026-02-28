@@ -12,6 +12,7 @@ const Hero: React.FC = () => {
                     muted
                     loop
                     playsInline
+                    preload="metadata"
                 >
                     <source src="/media/Hero Background.mp4" type="video/mp4" />
                 </video>
@@ -34,8 +35,9 @@ const Hero: React.FC = () => {
                     className="w-[140px] h-[140px] md:w-[180px] md:h-[180px] lg:w-[220px] lg:h-[220px] shrink-0 mb-8 rounded-full overflow-hidden border-4 border-[var(--color-primary)] shadow-[0_0_30px_rgba(62,142,65,0.6)]"
                 >
                     <img
-                        src="/media/Profile Pic.jpeg"
+                        src="/media/Profile Pic.webp"
                         alt="Bilal Shakeel"
+                        loading="eager"
                         className="w-full h-full object-cover object-top"
                     />
                 </motion.div>

@@ -12,6 +12,7 @@ const Contact: React.FC = () => {
                     muted
                     loop
                     playsInline
+                    preload="metadata"
                 >
                     <source src="/media/Come With Me.mp4" type="video/mp4" />
                 </video>

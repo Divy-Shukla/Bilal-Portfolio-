@@ -10,7 +10,7 @@ const journeyItems: JourneyItem[] = [
   {
     id: 'img1',
     type: 'image',
-    src: '/media/1.jpeg',
+    src: '/media/1.webp',
     title: 'Discover. Experience. Share.',
     description: 'Stories from every corner of the world.',
     reverse: false,
@@ -26,7 +26,7 @@ const journeyItems: JourneyItem[] = [
   {
     id: 'img2',
     type: 'image',
-    src: '/media/2.jpeg',
+    src: '/media/2.webp',
     title: 'Explore Beyond Boundaries',
     description: 'Where adventure meets storytelling.',
     reverse: false,
@@ -42,7 +42,7 @@ const journeyItems: JourneyItem[] = [
   {
     id: 'img3',
     type: 'image',
-    src: '/media/3.jpeg',
+    src: '/media/3.webp',
     title: 'Travel With Purpose',
     description: 'More than travel — real experiences.',
     reverse: false,
@@ -50,7 +50,7 @@ const journeyItems: JourneyItem[] = [
   {
     id: 'img4',
     type: 'image',
-    src: '/media/4.jpeg',
+    src: '/media/4.webp',
     title: 'Every Journey Has a Story',
     description: 'Capturing moments that inspire exploration.',
     reverse: true,

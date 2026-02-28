@@ -42,6 +42,7 @@ const JourneyMedia: React.FC<JourneyMediaProps> = ({ items }) => {
                                     <img
                                         src={item.src}
                                         alt={item.title}
+                                        loading="lazy"
                                         className="w-full h-auto max-h-[420px] md:max-h-[850px] object-cover aspect-[4/5] md:aspect-[4/5] lg:aspect-auto"
                                     />
                                     {/* Subtle glass reflection overlay */}
@@ -55,6 +56,7 @@ const JourneyMedia: React.FC<JourneyMediaProps> = ({ items }) => {
                                         muted
                                         loop
                                         playsInline
+                                        preload="metadata"
                                         className="w-full h-auto aspect-video object-cover"
                                     />
                                     {/* Subtle glass reflection overlay */}
