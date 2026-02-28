@@ -48,9 +48,9 @@ const journeyItems: JourneyItem[] = [
     reverse: false,
   },
   {
-    id: 'img4',
-    type: 'image',
-    src: '/media/4.webp',
+    id: 'vid3',
+    type: 'video',
+    src: '/media/V5.mp4',
     title: 'Every Journey Has a Story',
     description: 'Capturing moments that inspire exploration.',
     reverse: true,
